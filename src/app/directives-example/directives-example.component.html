@@ -1,0 +1,15 @@
+
+<h1>NgIf</h1>
+<p>NgIf Directive is used to add or remove items based on if condition</p>
+<ul>
+  <li *ngIf="student.length > 0">Students List Is Presents</li>
+  <li *ngIf="student.length === 0">Students List Is Empty</li>
+</ul>
+
+<h1>NgFor</h1>
+<p>NgFor Directive is used to iterate a list of items and then display them.</p>
+<ul>
+    <li *ngFor="let s of student; let i = index">
+      {{i + 1}}. {{s}}
+    </li>
+</ul>
