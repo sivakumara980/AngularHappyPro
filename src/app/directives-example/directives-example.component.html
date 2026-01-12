@@ -13,3 +13,11 @@
       {{i + 1}}. {{s}}
     </li>
 </ul>
+
+<h1>NgSwitch</h1>
+<p>NgSwitch Directive is used to display one element from a set of elements based on a switch condition.</p>
+<div [ngSwitch]="student.length">
+  <p *ngSwitchCase="0">No Students Available</p>
+  <p *ngSwitchCase="1">One Student Available</p>
+  <p *ngSwitchCase="2">Two Students Available</p>
+  <p *ngSwitchDefault>More than Two Students Available</p>

@@ -1,1 +1,21 @@
+<p>String InterPolation Example</p>
+<div>{{title}}</div>
 
+<p>Property Binging</p>
+
+<div [innerText]="title"></div>
+
+<input type="text" [disabled]="isdisabled" />
+<br>
+<br>
+//Event Binding Example
+<br>
+<br>
+<button (click)="OnFan()">On Fan</button>
+<br>
+<br>
+//Two-way data Binding Example
+<br>
+<br>
+<input type="text" [(ngModel)]="name"/>    
+<div>{{name}}</div>

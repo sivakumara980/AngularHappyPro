@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-binding-example.component.scss']
 })
 export class DataBindingExampleComponent {
+title = 'Data Binding Example';
+isdisabled = true;
+name = 'Angular';
 
+OnFan(){
+  alert('Fan is ON');
 }
+}
+
+
