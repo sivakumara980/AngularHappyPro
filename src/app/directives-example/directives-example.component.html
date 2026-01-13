@@ -21,3 +21,23 @@
   <p *ngSwitchCase="1">One Student Available</p>
   <p *ngSwitchCase="2">Two Students Available</p>
   <p *ngSwitchDefault>More than Two Students Available</p>
+
+</div>  
+
+<h1>NgStyle</h1>
+<p>NgStyle Directive is used to add or remove styles dynamically.</p>
+<p style="background-color: lightgreen;">Using Only Style</p>
+<p>{{student.length}} given number is 4</p>
+<p [ngStyle]="{backgroundColor: student.length > 4 ? 'lightgreen' : 'lightcoral', color: 'white'}">
+  Student List Status with NgStyle
+</p>
+
+<p [ngClass]="classforngclassone">On C One</p>
+<p [ngClass]="classforngclasstwo">On C Two</p>
+
+
+<h1>NgClass</h1>
+<p>NgClass Directive is used to add or remove CSS classes dynamically.</p>
+<p [ngClass]="{'text-success': student.length > 0, 'text-danger': student.length === 0}">
+  Student List Status
+</p>  

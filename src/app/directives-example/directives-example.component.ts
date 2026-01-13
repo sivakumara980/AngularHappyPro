@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DirectivesExampleComponent {
 student = ["Sivakumar", "Karthik", "Ramesh", "Mani", "Vijay"];
+
+classforngclassone = "csone";
+classforngclasstwo = "cstwo";
 }
